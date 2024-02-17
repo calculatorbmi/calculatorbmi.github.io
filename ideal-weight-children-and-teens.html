@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculate Ideal Weight for Kids and Teens - CalculatorBMI</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/imc.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/sendform.js" defer></script>
+  </head>
+  <body>
+ <header>
+  CalculatorBMI
+</header>
+<article class="calculator w3-container w3-content" style="max-width: 900px">
+  <section class="name w3-panel">
+    Calculate Ideal Weight for Kids and Teens
+  </section>
+  <form id="calculator" class="w3-container w3-card w3-text-black w3-margin" action="https://bodymassindex.men/cgi/ibw_kids.pl" method="GET" target="Popup" name="calculator" onsubmit="sendForm('800','800','calculator',''); return false;">
+
+  <section class="inputSection w3-panel">
+    <label>Your height (cm):</label>
+    <div class="inputAround"><input class="input w3-mobile" id="height" name="height" type="text" placeholder="cm"></div>
+  </section>
+  <section class="inputSection w3-panel">
+    <label for="age">Your age (years):</label>
+    <div class="inputAround">
+       <select class="w3-mobile select" aria-label="Age" size="1" name="age">
+      <option value="1">Under 8 Years</option>
+      <option value="8" selected>8 Years</option>
+      <option value="9">9 Years</option>
+      <option value="10">10 Years</option>
+      <option value="11">11 Years</option>
+      <option value="12">12 Years</option>
+      <option value="13">13 Years</option>
+      <option value="14">14 Years</option>
+      <option value="15">15 Years</option>
+      <option value="16">16 Years</option>
+      <option value="17">17 Years</option>
+      <option value="18">18 Years</option>
+      </select></div>
+    </section>
+    <section class="inputSection w3-panel">
+  <input class="w3-radio" type="radio" name="gender" value="boy" checked>
+  <label>Boy</label>
+  
+  <input class="w3-radio" type="radio" name="gender" value="girl">
+  <label>Girl</label>
+      </section>
+   <section class="buttonSection w3-panel">
+ <button class="w3-btn w3-dark-grey w3-round"  type="submit"> Calculate Ideal Weight</button></form>
+  </section>
+</article>
+<article class="about w3-content w3-panel" style="max-width: 900px">
+  <h4>Determining the ideal weight in children and adolescents</h4>
+<div class="text">
+  <p>Determining the ideal weight in children and adolescents is more complex than in the case of adults, because they are constantly developing and growing. There is no single value considered "ideal" for all children, as factors such as age, sex, height and stage of development vary significantly between individuals.</p>
+ </div>
+</article>
+<article class="calculators w3-panel w3-content" style="max-width: 900px;">
+<section class="name">
+  Other Calculators
+</section>
+<section class="w3-container">
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="bmi.html"><img src="img/Body-Mass-Index.webp" alt="" width="100%"></a>
+      <div class="text">
+      <a href="bmi.html">Calculate BMI</a>
+      </div>
+    </div>
+  </div>
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="calories.html"><img src="img/Calculati-Caloriile.jpg.webp" alt="" width="100%"></a>
+      <div class="text">
+      <a href="calories.html">Calories Consumption</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="w3-container">
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="bmi-kids.html"><img src="img/imc-copii-si-adolescenti.jpg.webp" alt="" width="100%"></a>
+      <div class="text">
+        <a href="bmi-kids.html">BMI for Kids and Teens</a>
+      </div>
+    </div>
+  </div>
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="ideal-weight.html"><img src="img/Ideal-Weight-2048x1365.jpg.webp" alt="" width="100%"></a>
+      <div class="text">
+        <a href="ideal-weight.html">Ideal Weight</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="w3-container">
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="base-metabolic-rate.html"><img src="img/Weight-Watchers-scaled.jpg.webp" alt="" width="100%"></a>
+      <div class="text">
+        <a href="base-metabolic-rate.html">Base Metabolic Rate</a>
+      </div>
+    </div>
+  </div>
+</section>
+</article>
+  </body>
+</html>
